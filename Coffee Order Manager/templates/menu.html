@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Menu</title>
+</head>
+<body>
+<h1>Coffee Menu</h1>
+<form method="POST" action="{{ url_for('menu') }}">
+    <ul>
+        {% for coffee in coffee_menu %}
+            <li>
+                {{ coffee.name }} - ${{ coffee.price }}. Quantity: <input type="number" name="{{ coffee.name }}" value="0">
+            </li>
+        {% endfor %}
+    </ul>
+    <button type="submit">Place Order</button>
+</form>
+<a href="{{ url_for('home') }}">Back to My Orders</a>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Order</title>
+</head>
+<body>
+<h1>Edit Order #{{ order.id }}</h1>
+<form method="POST" action="{{ url_for('edit_order', id=order.id) }}">
+    <ul>
+        {% for item in order.order_items %}
+            <li>
+                {{ item.name }} - ${{ item.price }}
+                Quantity: <input type="number" name="quantity_{{ item.id }}" value="{{ item.quantity }}" min="0">
+            </li>
+        {% endfor %}
+    </ul>
+    <button type="submit">Save Changes</button>
+</form>
+<a href="{{ url_for('home') }}">Back to My Orders</a>
+</body>
+</html>
