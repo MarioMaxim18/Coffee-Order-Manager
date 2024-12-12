@@ -17,6 +17,9 @@
     </ul>
     <button type="submit">Save Changes</button>
 </form>
+<form method="POST" action="{{ url_for('delete_order', id=order.id) }}">
+    <button type="submit">Delete Order</button>
+</form>
 <a href="{{ url_for('home') }}">Back to My Orders</a>
 </body>
 </html>
