@@ -6,9 +6,7 @@
 ## Features
 
 ### 1. **Order Management**
-   &nbsp;&nbsp;&nbsp;• **Add Orders**: Users can browse a coffee menu and create new orders by selecting items and specifying quantities.  
-   &nbsp;&nbsp;&nbsp;• **Edit Orders**: Existing orders can be modified, allowing users to update quantities or remove specific items.  
-   &nbsp;&nbsp;&nbsp;• **View Orders**: Each order displays a detailed summary, including itemized totals and an order ID for easy tracking.
+   &nbsp;&nbsp;&nbsp;• The application implements essential **CRUD operations** to manage orders. Users can create, view, update, and delete orders, with seamless integration between the database and user interface to ensure efficient data management and interaction.
 
 ### 2. **Validation and Error Handling**
    &nbsp;&nbsp;&nbsp;• **Input Validation**: Ensures that all inputs, such as item quantities, are valid and within acceptable ranges.  
